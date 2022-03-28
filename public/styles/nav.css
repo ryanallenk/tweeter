@@ -1,0 +1,30 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 120px;
+  background-color: #4056a1;
+  color: #FFFFFF;
+  width:auto;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+  padding-bottom: 0.5em;
+}
+
+.nav-title {
+  display: flex;
+  justify-content: flex-start;
+  font-family: 'Bungee' 
+}
+
+.right-side-nav-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.navigation-arrow {
+  display: flex;
+  justify-content: center;
+  color: red;
+}
