@@ -5,7 +5,6 @@
 form {
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
 }
 
 
@@ -23,7 +22,7 @@ button {
   align-items: center;
 }
 
-div {
+div.submit-and-counter {
   display: flex;
   justify-content: space-between;
   align-items: center;

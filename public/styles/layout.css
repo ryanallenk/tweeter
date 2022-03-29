@@ -39,8 +39,6 @@ body {
 }
 
 main {
-  display: flex; 
    width: 90%;
    margin: auto;
-   justify-content: center;
  }

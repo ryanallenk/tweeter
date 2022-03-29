@@ -14,14 +14,10 @@ nav {
 }
 
 .nav-title {
-  display: flex;
-  justify-content: flex-start;
   font-family: 'Bungee' 
 }
 
 .right-side-nav-content {
-  display: flex;
-  flex-direction: column;
   justify-content: flex-end;
 }
 
