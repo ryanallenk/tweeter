@@ -31,14 +31,4 @@ nav {
   color: red;
 }
 
-header {
-  display: flex;
-  flex-direction: column;
-  height: 485px;
-  justify-content: flex-end;
-  align-items:center;
-  background-color: #999797;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-  z-index: 1;
-}
 

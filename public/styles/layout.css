@@ -27,8 +27,20 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
- main.container {
+ header {
+  display: flex;
+  flex-direction: column;
+  height: 490px;
+  justify-content: flex-end;
+  align-items:center;
+  background-color: #999797;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  z-index: 1;
+}
+
+main {
+  display: flex; 
    width: 90%;
-   align-items: center;
-   background-color: #f4f1ec;
+   margin: auto;
+   justify-content: center;
  }
