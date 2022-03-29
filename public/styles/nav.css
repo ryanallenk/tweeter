@@ -5,10 +5,12 @@ nav {
   height: 120px;
   background-color: #4056a1;
   color: #FFFFFF;
-  width:auto;
+  width: 100vw;
   padding-left: 1.5em;
   padding-right: 1.5em;
   padding-bottom: 0.5em;
+  z-index: 9;
+  position: fixed;
 }
 
 .nav-title {
@@ -28,3 +30,15 @@ nav {
   justify-content: center;
   color: red;
 }
+
+header {
+  display: flex;
+  flex-direction: column;
+  height: 485px;
+  justify-content: flex-end;
+  align-items:center;
+  background-color: #999797;
+  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
+  z-index: 1;
+}
+
