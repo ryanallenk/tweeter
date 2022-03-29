@@ -22,7 +22,7 @@ button {
   align-items: center;
 }
 
-div.submit-and-counter {
+.submit-and-counter {
   display: flex;
   justify-content: space-between;
   align-items: center;
