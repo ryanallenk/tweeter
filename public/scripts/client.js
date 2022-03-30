@@ -55,18 +55,25 @@ const renderTweets = function(tweets) {
 
 
 $( document ).ready(function() {
-  renderTweets(tweetData);
   
   $('form').submit(function(event) {
     event.preventDefault();
     let data = $(this).serialize();
+    console.log(data)
+    if (data.length > 146) {
+      alert("Your tweet is too long!");
+      return
+    }
+    if (data === null || data === "text=") {
+      alert("Sorry, we cannot send blank tweets!");
+      return
+    }
     $.post("/tweets", data);
   })
 
   const loadTweets = function () {
     $.get("./tweets")
     .then(function(data) {
-      console.log(data);
       renderTweets(data);
     }) 
   }
