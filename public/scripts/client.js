@@ -55,15 +55,21 @@ const renderTweets = function(tweets) {
 
 
 $( document ).ready(function() {
-renderTweets(tweetData);
-});
-
-$( document ).ready(function() {
+  renderTweets(tweetData);
+  
   $('form').submit(function(event) {
     event.preventDefault();
     let data = $(this).serialize();
     $.post("/tweets", data);
-    console.log(data);
   })
+
+  const loadTweets = function () {
+    $.get("./tweets")
+    .then(function(data) {
+      console.log(data);
+      renderTweets(data);
+    }) 
+  }
+  loadTweets();
 });
 
