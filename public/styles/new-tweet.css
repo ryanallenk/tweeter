@@ -11,7 +11,8 @@ form {
 textarea {
   border: 0;
   border-bottom: solid grey;
-  background-color:#f4f1ec
+  background-color:#f4f1ec;
+  margin-top: .5em
 }
 
 button {

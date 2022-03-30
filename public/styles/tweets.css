@@ -1,0 +1,40 @@
+article {
+  display: flex;
+  flex-direction: column;
+  border: solid #545149;
+  margin-top: .5em;
+  padding: .5em;
+}
+
+article:hover {
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+
+article .tweet-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+article .tweet-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: solid grey;
+  font-size: medium;
+  padding: .25em;
+}
+
+#user-name {
+  color: lightgray;
+}
+
+article .fa-solid {
+  padding-left: .25em;
+  padding-right: .25em;
+}
+
+article .fa-solid:hover {
+  color:darkorange
+}
