@@ -37,7 +37,7 @@ const createTweetElement = function(tweetData) {
   </header>
   <div class="tweet-id"><p>${tweetData.content.text}</p>
   </div>
-  <footer class="tweet-footer"><span>${tweetData.created_at}</span><span class="interact-icons"><i class="fa-solid fa-flag"></i><i class="fa-solid fa-retweet"></i><i class="fa-solid fa-heart"></i></span>
+  <footer class="tweet-footer"><span>${jQuery.timeago(tweetData.created_at)}</span><span class="interact-icons"><i class="fa-solid fa-flag"></i><i class="fa-solid fa-retweet"></i><i class="fa-solid fa-heart"></i></span>
   </footer>`);
 
   return $tweet
