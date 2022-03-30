@@ -57,3 +57,10 @@ const renderTweets = function(tweets) {
 $( document ).ready(function() {
 renderTweets(tweetData);
 });
+
+$( document ).ready(function() {
+  $('form').submit(function(event) {
+    event.preventDefault();
+  })
+});
+
