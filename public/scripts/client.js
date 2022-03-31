@@ -92,6 +92,7 @@ $( document ).ready(function() {
     $.get("./tweets")
     .then(function(data) {
       renderTweets(data);
+      $('#tweet-text').val("")
     }) 
   }
   loadTweets();
