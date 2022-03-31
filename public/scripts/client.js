@@ -58,17 +58,22 @@ $( document ).ready(function() {
   
   $('form').submit(function(event) {
     event.preventDefault();
-    let data = $(this).serialize();
-    console.log(data)
-    if (data.length > 146) {
-      alert("Your tweet is too long!");
+    const tweetText = $('#tweet-text').val().toString()
+
+    if (tweetText === "" || tweetText === null) {
+      alert("Sorry, we cannot send empty tweets!");
       return
     }
-    if (data === null || data === "text=") {
-      alert("Sorry, we cannot send blank tweets!");
+    if (tweetText.length > 140) {
+      alert("Sorry, we cannot send tweets over 140 characters!");
       return
     }
-    $.post("/tweets", data);
+
+    const data = $(this).serialize();
+    $.post("/tweets", data)
+      .then(() => {
+      loadTweets();
+      })
   })
 
   const loadTweets = function () {
