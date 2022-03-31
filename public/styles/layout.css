@@ -27,9 +27,15 @@ body {
  * Additional CSS can be defined below or in other CSS files, as per instructions
  */
 
-
-
 main {
    width: 90%;
    margin: auto;
  }
+
+.error-message {
+    display: none;
+    text-align: center;
+    border: solid 5px red;
+    padding: 0.5em;
+    margin-top: 0.5em;
+}
