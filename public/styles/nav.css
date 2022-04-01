@@ -14,8 +14,7 @@ nav {
   padding-right: 1.5em;
   padding-bottom: 0.5em;
   z-index: 9;
-  position: fixed;
-  top:0;
+  position: absolute;
 }
 
 .nav-title {
@@ -43,8 +42,7 @@ nav {
 .page-header {
   display: flex;
   flex-direction: column;
-  height: 490px;
-  justify-content: flex-end;
+  height: 400px;
   align-items:center;
   background-color: #999797;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
