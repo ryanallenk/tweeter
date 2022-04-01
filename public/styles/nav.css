@@ -11,7 +11,7 @@ nav {
   width: 100vw;
   padding: 1.5em;
   z-index: 9;
-  position: absolute;
+  position: fixed;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -19,6 +19,7 @@ nav {
    background-color: #54a0ff;
    align-items: flex-end;
    padding: 0 1em 0.5em;
+   position: absolute;
  }
 }
 
