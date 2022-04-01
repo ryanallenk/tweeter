@@ -6,7 +6,6 @@
 
 const tweetData = []
 
-
 const createTweetElement = function(tweetData) {
   let $tweet = $(`<article>
   <header class="tweet-header">
@@ -39,16 +38,24 @@ const escape = function (str) {
   return div.innerHTML;
 };
 
-
+// logic for loading the list of tweets
+const loadTweets = function () {
+  $.get("./tweets")
+    .then(function (data) {
+      $('.tweets').empty();
+      renderTweets(data);
+      $('#tweet-text').val("")
+    })
+}
 
 $( document ).ready(function() {
-  
+  // top right navigation arrow / tweet area toggle
   $(".navigation-arrow").click(function () {
     $(".new-tweet").toggle("fast", function() {
     });
     inputFocus("tweet-text");
   });
-
+  // logic for submitting tweet action
   $('form').submit(function(event) {
     event.preventDefault();
     const tweetText = $('#tweet-text').val().toString()
@@ -75,15 +82,7 @@ $( document ).ready(function() {
       loadTweets();
       })
   })
-
-  const loadTweets = function () {
-    $.get("./tweets")
-    .then(function(data) {
-      $('.tweets').empty();
-      renderTweets(data);
-      $('#tweet-text').val("")
-    }) 
-  }
+  // function call to load the tweets when the DOM is loaded
   loadTweets();
 });
 
