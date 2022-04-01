@@ -1,9 +1,13 @@
+@keyframes bounce { 
+  0% { transform: translateY(0); }
+  100% { transform: translateY(+10px); }
+}
+
 nav {
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
   height: 120px;
-  background-color: #4056a1;
   color: #FFFFFF;
   width: 100vw;
   padding-left: 1.5em;
@@ -25,7 +29,15 @@ nav {
 .navigation-arrow {
   display: flex;
   justify-content: center;
-  color: red;
+  color: white;
+}
+.navigation-arrow:hover {
+  display: flex;
+  justify-content: center;
+  color: white;
+  animation: bounce 0.8s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }
 
 .page-header {
