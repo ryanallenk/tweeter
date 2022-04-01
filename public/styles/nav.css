@@ -6,15 +6,20 @@
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: flex-end;
   height: 120px;
   color: #FFFFFF;
   width: 100vw;
-  padding-left: 1.5em;
-  padding-right: 1.5em;
-  padding-bottom: 0.5em;
+  padding: 1.5em;
   z-index: 9;
   position: absolute;
+}
+
+@media only screen and (min-width: 1024px) {
+  nav {
+   background-color: #54a0ff;
+   align-items: flex-end;
+   padding: 0 1em 0.5em;
+ }
 }
 
 .nav-title {
@@ -37,15 +42,4 @@ nav {
   animation: bounce 0.8s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
-}
-
-.page-header {
-  display: flex;
-  flex-direction: column;
-  height: 400px;
-  align-items:center;
-  background-color: #999797;
-  background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
-  z-index: 1;
-  justify-content: flex-end;
 }
