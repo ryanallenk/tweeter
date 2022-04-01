@@ -47,4 +47,5 @@ nav {
   background-color: #999797;
   background-image: url("https://www.transparenttextures.com/patterns/45-degree-fabric-light.png");
   z-index: 1;
+  justify-content: flex-end;
 }
