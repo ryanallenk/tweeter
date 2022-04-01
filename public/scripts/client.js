@@ -29,6 +29,10 @@ const renderTweets = function(tweets) {
   }
 }
 
+const inputFocus = function (id) {
+  document.getElementById(id).focus();
+}
+
 const escape = function (str) {
   let div = document.createElement("div");
   div.appendChild(document.createTextNode(str));
@@ -39,6 +43,12 @@ const escape = function (str) {
 
 $( document ).ready(function() {
   
+  $(".navigation-arrow").click(function () {
+    $(".new-tweet").toggle("fast", function() {
+    });
+    inputFocus("tweet-text");
+  });
+
   $('form').submit(function(event) {
     event.preventDefault();
     const tweetText = $('#tweet-text').val().toString()

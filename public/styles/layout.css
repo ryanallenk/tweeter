@@ -39,6 +39,9 @@ main {
     padding: 0.5em;
     margin-top: 0.5em;
 }
+.new-tweet {
+  display: none;
+}
 
 .page-header {
   display: flex;
